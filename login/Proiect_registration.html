@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Inregistrare</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <style>
+        h1{
+            color: rgb(55,66,89);
+        }
+        body {
+            display: flex;
+            min-height: 100vh;
+            margin: 0;
+            align-items: center;
+            justify-content: center;
+            background-color: #f0f0f0;
+        }
+
+        .login {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .login h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .login form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .login label {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .login input {
+            padding: 10px;
+            margin-bottom: 15px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .login input[type="submit"] {
+            background-color:  rgb(55,66,89);
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .login a {
+            color: #333;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login">
+        <h1>Register</h1>
+        <form action="Proiect_registration.php" method="post" autocomplete="off">
+            <label for="username">
+                <i class="fas fa-user"></i>
+            </label>
+            <input type="text" name="username" placeholder="Username" id="username" required>
+            <label for="email">
+                <i class="fa fa-envelope"></i>
+            </label>
+            <input type="text" name="email" placeholder="E-mail" id="email" required>
+            <label for="password">
+                <i class="fas fa-lock"></i>
+            </label>
+            <input type="password" name="password" placeholder="Parola" id="password" required>
+            <input type="submit" value="Register">
+        </form>
+    </div>
+</body>
+
+</html>
