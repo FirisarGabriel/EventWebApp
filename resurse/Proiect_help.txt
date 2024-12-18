@@ -1,0 +1,5 @@
+Bun venit pe pagina noastră de ajutor! Aici veți găsi informații utile pentru navigarea pe site-ul nostru și pentru a profita la maximum de experiența de planificare a evenimentelor.
+Site ul nostru are doua optiuni de utilizatori: useri si administratori.
+Userii pot sa vizualizeze lista cu evenimentele afisate pe siteul nostru in pagina principala sau apasand pe tab-ul "Evenimente disponibile", de asemenea userii pot sa vada detalii despre evenimentul respectiv dand click pe eveniment  si sa cumpere bilete la evenimentul dorit din tab-ul de "Bilete-inregistrare".
+Pe langa functionalitatile principale, userii au acces si la tab-urile de "Agenda","Sponsori","Speakers" si "Contact", fiecare fiind o pagina cu detalii despre aceste subiecte.
+Administratorii au acces la toate functionalitatile accesibile pentru useri si in plus pot sa adauge un eveniment nou sau sa stearga si sa modifice evenimentele existente folosind butoanele sugestive de pe pagina principala.
