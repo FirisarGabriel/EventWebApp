@@ -33,10 +33,14 @@ include("../Proiect_conectare.php");
 
     if (isset($_POST["submit"])) {
         $searchTerm = $_POST["search"];
-        $searchTerm = htmlspecialchars($searchTerm);
-        $query = "SELECT * FROM evenimente WHERE nume LIKE '%$searchTerm%' OR descriere LIKE '%$searchTerm%'";
-        $result = $mysqli->query($query);
+        $searchTerm = htmlspecialchars($searchTerm); // You can still sanitize HTML input if required.
 
+        // Use a prepared statement to safely query the database
+        $stmt = $mysqli->prepare("SELECT * FROM evenimente WHERE nume LIKE ? OR descriere LIKE ?");
+        $searchTerm = '%' . $searchTerm . '%'; // Add wildcards for the LIKE operator
+        $stmt->bind_param("ss", $searchTerm, $searchTerm);
+        $stmt->execute();
+        $result = $stmt->get_result();
         if ($result) {
             if ($result->num_rows > 0) {
                 echo '<div id="events" >';
